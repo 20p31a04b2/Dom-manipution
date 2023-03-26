@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic DOM Manipulations</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">DOM Manipulations Exercises</h2>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on paragraph:</h3>
+    <p id="paragraph_1" onmouseover="mouseover()" onmouseout="mouseout()">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. In, suscipit.</p>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on Button:</h3>
+    <button id="btn" onmouseover="button_1()" onmouseout="button_2()">MouseEvent</button>
+
+    <h3>Implement an "onclick" on input-textbox</h3>
+    <input id="mybtn" type="button" value="Button" onclick="sample()">
+    <p id="demo"></p>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on list-items</h3>
+    <or id="list1" onmouseover="list_items()" onmouseout="list_items_1()">
+        <li>Pravallika</li>
+        <li>ECE</li>
+        <li>ACET</li>
+        <li>FSD</li>
+    </or>
+
+     <script type="text/javascript">
+        function mouseover() {
+            document.getElementById("paragraph_1").style.color = "red";
+        }
+
+        function mouseout() {
+            document.getElementById("paragraph_1").style.color = "black";
+        }
+
+        function button_1() {
+            document.getElementById("btn").innerHTML = "change";
+        }
+
+        function button_2() {
+            document.getElementById("btn").innerHTML = "MouseEvent";
+        }
+
+        function sample() {
+            document.getElementById("mybtn").value;
+            document.getElementById("demo").innerHTML = "I am Pravallika,Full stack Developer";
+        }
+
+        function list_items() {
+            document.getElementById("list1").style.color = "Green";
+            document.getElementById("list1").style.fontWeight = "bold"
+        }
+
+        function list_items_1() {
+            document.getElementById("list1").style.color = "black";
+            document.getElementById("list1").style.fontWeight = "normal";
+        }
+
+   </script>
+</body>
+</html>
